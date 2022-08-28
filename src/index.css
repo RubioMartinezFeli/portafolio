@@ -1,0 +1,415 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.layout{
+  width: 85%;
+  margin: 0 auto;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  height: 132px;
+  border-bottom: 3px solid black;
+  margin-bottom: 35px;
+}
+
+.header .logo{
+  flex-grow: 2;
+  display: flex;
+}
+
+.header .logo span{
+  display: block;
+  font-size: 90px;
+  font-weight: bolder;
+  margin-top: -8px;
+}
+
+.header .logo h3{
+  display: block;
+  flex-basis: 40px;/*Es como width*/
+  margin-left: 10px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.header nav{
+  flex-grow: 1;
+}
+
+.header nav ul{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+.header li{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 15px;
+  margin-left: 15px;
+}
+
+.header li a{
+  color: black;
+  text-decoration: none;
+  transition: all 300ms;
+}
+
+.header .active,
+.header li a:hover{
+  color: #fa4529;
+}
+
+.footer{
+  min-height: 40px;
+  line-height: 7px;
+  text-align: center;
+  padding-top: 45px;
+  font-size: 14px;
+  border-top: 3px solid black;
+  background: #f5f5f5;
+  color: #444;
+  margin-top: 10px;
+}
+
+.content{
+  min-height: 400px;
+}
+
+.home h1{
+  font-family: Georgia;
+  font-weight: 400;
+  font-size: 55px;
+  margin-bottom: 0px;
+  margin-top: 50px;
+}
+
+.strong-principal{
+  color: #fa4529;
+}
+
+.home .h2-ayuda{
+  color: rgb(98, 98, 98);
+  font-weight: lighter;
+}
+
+.home .title a{
+  font-size: 20px;
+  background-color: #fa4529;
+  color: white;
+  border-radius: 5px;
+  padding: 15px;
+  transition: all 300ms;
+  text-decoration: none;
+  display: inline-flex;
+}
+
+.home .title a:hover,
+input[type="submit"]:hover,
+button:hover{
+  background-color: rgb(198, 0, 0) ;
+  color: #ddd;
+  
+}
+
+.page .heading,
+.home .heading{
+  font-size: 40px;
+  font-weight: 500;
+  color: black;
+  margin-top: 45px;
+  margin-bottom: 0;
+}
+
+.page .heading{
+  font-size: 55px;
+  font-weight: bold;
+}
+
+
+.home p{
+  color: rgb(98, 98, 98);
+}
+
+input[type="text"],
+input[type="e-mail"],
+textarea{
+  padding: 15px;
+  display: block;
+  width: 250px;
+  margin-top: 25px;
+}
+
+input[type="submit"],
+button{
+  margin-top: 15px;
+  font-size: 15px;
+  padding: 15px;
+  border: 0px;
+  background-color: #fa4529;
+  color: white;
+  border-radius: 5px;
+  transition: all 300ms;
+  text-decoration: none;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.works{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.work-item{
+  flex-basis: 30%;
+  flex-grow: 1;
+  margin: 30px;
+}
+
+.work-item .mask{
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  box-shadow: 0px 5px 12px #ddd;
+}
+
+.work-item .mask:hover img{
+  width: 150%;
+  margin-right: 30%;
+}
+
+.work-item img{
+  width: 120%;
+  transition: all 300ms;
+}
+
+.work-item span{
+  color: gray;
+  margin-top: 35px;
+  display: block;
+}
+
+.work-item h2{
+  display: block;
+  font-size: 30px;
+  color: black;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.work-item a,
+.page-work a{
+  color: black;
+  text-decoration: none;
+  transition: all 300ms;
+}
+
+.work-item a:hover,
+.page-work a:hover{
+  color: #fa4529;
+}
+
+.work-item h3 {
+  display: block;
+  color: gray;
+  border-top: 1px solid #ddd;
+  margin-top: 0px;
+  padding-top: 17px;
+}
+
+.page-work .mask{
+  height: 300px;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px #ddd;
+  margin-top: 40px;
+}
+
+.page-work .p-tecnologia{
+  font-size: 15px;
+  color: rgb(98, 98, 98)
+}
+
+.page-work .p-descripcion{
+  font-size: 20px;
+  color: black;
+  margin-top: 50px;
+}
+
+.page-curriculum{
+  display: grid;
+  grid-template-columns: auto auto; /*Cada auto o valor equivale a una columna en este caso habrían 2*/
+
+
+  margin: 0 auto;
+
+}
+
+
+.page-curriculum li{
+  margin-bottom: 8px;
+  font-size: 18px;
+
+}
+
+
+.page-curriculum p{
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.experiencia{
+  grid-column: 1/2;
+  padding: 15px;
+}
+
+.conocimientos{
+  grid-column: 1/2;
+  padding: 15px;
+  
+}
+
+.otros{
+  grid-column: 1/2;
+  padding: 15px;
+}
+
+.educacion{
+  grid-column: 1/2;
+  padding: 15px;
+}
+
+.img-lenguajes{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.img-lenguajes img{
+  width: 340px;
+}
+
+.img-react{
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.img-react img{
+    width: 230px;
+}
+
+.presentacion{
+  font-weight: normal;
+  font-size: 24px;
+}
+
+
+@media (max-width: 600px) {
+  .work-item .mask{
+    height: fit-content;
+  }
+
+  .header li{
+    font-size: 8px;
+    margin-right: 8px;
+    margin-left: 0;
+
+  }
+
+  .page-curriculum{
+    display: contents;
+  }
+
+  .img-lenguajes{
+    margin-top: 10px;
+  }
+  
+  .img-lenguajes img{
+    width: 150px;
+  }
+  
+  .img-react{
+    margin-top: 10px;
+  }
+  
+  .img-react img{
+      width: 150px;
+  }
+
+  .header .logo{
+  flex-grow: 2;
+  display: flex;
+}
+
+.header .logo span{
+  display: block;
+  font-size: 50px;
+  font-weight: bolder;
+  margin-top: -5px;
+}
+
+.header .logo h3{
+  display:block;
+  flex-basis: 0px;/*Es como width*/
+  margin-left: 4px;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.header{
+  justify-content:start;
+  height: 80px;
+}
+
+
+.header nav ul{
+  margin-left: -25px;
+  display:flex;
+  justify-content:flex-start;
+  align-items: center;
+  list-style: none;
+}
+
+}
+
+.imagen-ini{
+ display: flex;
+ margin-left: 5%;
+ 
+}
+
+.imagen-ini img{
+  margin-top: 40px;
+  width: 45%;
+  margin-right: 40px;
+  
+}
+
+.ol-servicios li{
+  margin-bottom: 15px;
+}
+
+
+
